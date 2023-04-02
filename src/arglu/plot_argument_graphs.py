@@ -7,8 +7,8 @@ import matplotlib.pyplot as plt
 plt.rcParams["figure.figsize"] = (15,5)
 import networkx as nx
 from networkx.drawing.nx_agraph import graphviz_layout
-from common.file_type_utils import read_textgraph
-from common.graph_processing import make_graph_from_arg_dicts, make_arg_dicts_from_graph, get_perspectives_dict
+from .file_type_utils import read_textgraph
+from .graph_processing import make_graph_from_arg_dicts, make_arg_dicts_from_graph, get_perspectives_dict
 import networkx as nx
 from networkx.drawing.nx_pydot import graphviz_layout
 
@@ -218,7 +218,7 @@ def show_graph(G, show_perspectives=True):
 if __name__ == "__main__":
 
     file_names = os.listdir("textgraphs")
-    random_file = np.random.choice(file_names)
+    # random_file = np.random.choice(file_names)
     #random_file = "This House would make the raising of business and labour standards a prerequisite for developmental"
     nodes_dicts, relations_dicts = read_txtgraph(op.join("textgraphs", random_file))
 

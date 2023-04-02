@@ -1,6 +1,5 @@
-from common.file_type_utils import raw_text_from_file
+from .file_type_utils import raw_text_from_file
 import networkx as nx
-import numpy as np
 
 
 def get_comments_dict(thread):

@@ -1,6 +1,7 @@
 import json
 import numpy as np
 import os
+import re
 
 def load_json_file(filepath):
     with open(filepath) as pf:
@@ -57,6 +58,7 @@ def write_textgraph(file_name, links_list, node_dict=None):
             if l[0] == l[2]:  # A node cannot link to itself.
                 continue 
             for s in l:
+                s = re.sub("\n*", "\n", s)
                 s = str(s).strip("\n")
                 out_file.write(s +"\n")
             out_file.write("\n")

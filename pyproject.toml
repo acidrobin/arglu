@@ -8,7 +8,7 @@ version = "0.0.8"
 authors = [
   { name="Jonathan Clayton", email="jaclayton2@sheffield.ac.uk" },
 ]
-description = "Some utilities for Argiment Mining"
+description = "Some utilities for Argument Mining"
 readme = "README.md"
 requires-python = ">=3.7"
 classifiers = [
